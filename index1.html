@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoes Store</title>
+    <link rel="icon" href="/images/11zon_cropped.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome-free-6.7.2-web/fontawesome-free-6.7.2-web/css/all.min.css" />
+    <link rel="stylesheet" href="../css/index1.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand ss" href="index1.html">Shoes Store</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mn"><a class="nav-link" href="index1.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle mn" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu mn1">
+                            <li><a class="dropdown-item text-muted mn2" href="MenShoes.html">Men</a></li>
+                            <li><a class="dropdown-item text-muted mn2" href="WomenShoes.html">Women</a></li>
+                            <li><a class="dropdown-item text-muted mn2" href="ChildrenShoes.html">Kids</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle mn" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Promotions
+                        </a>
+                        <ul class="dropdown-menu mn1">
+                            <li><a class="dropdown-item mn2" href="FlashSale.html">Flash Sale</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mn"><a class="nav-link" href="Login.html">Registration</a></li>
+                    <li class="nav-item mn"><a class="nav-link" href="Contact.html">Contact</a></li>
+                </ul>
+                <form class="d-flex ms-3 position-relative me-1 mt-3 mb-3" role="search">
+                    <input class="form-control me-2 bg-white text-dark fw-semibold border-dark search-box" type="search"
+                        id="search-input" placeholder="Search..." aria-label="Search" autocomplete="off">
+                    <button class="btn btn-outline-light" type="submit"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                    <div id="suggestions" class="list-group position-absolute mt-5 w-100 shadow" style="z-index: 1000;">
+                    </div>
+                    <a href="Cart.html" class="btn btn-outline-light position-relative ms-2">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="cart-count"
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            0
+                        </span>
+                    </a>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div id="mainCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/images/banner7.webp" class="d-block w-100 h-100" alt="Slide 2">
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.rebelsport.com.au/on/demandware.static/-/Library-Sites-rebel-shared-library/default/dwf7c7c824/blog/10-ways-to-make-running-more-fun.jpg"
+                    class="d-block w-100 h-100" alt="Slide 1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.misterrunning.com/media/src/nike-run-division-novita-home-desk.jpg"
+                    class="d-block w-100 h-100" alt="Slide 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container mt-4 mb-5">
+        <h2 class="text-center d2">Featured Products</h2>
+        <div class="row g-4 mt-3">
+            <div class="col-6 col-md-3">
+                <div class="card">
+                    <a href="ctsp61.html">
+                        <img src="/images/giay4.avif" class="card-img-top" alt="Nike Air Max">
+                        <div class="card-body">
+                            <h5 class="card-title">Nike Air Max Dn8</h5>
+                            <p class="card-text">5,589,000₫</p>
+                            <div class="d-flex justify-content-center gap-2">
+                                <button class="btn btn-success">Buy Now</button>
+                                <button class="btn btn-outline-primary">Add to Cart</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card">
+                    <a href="ctsp62.html">
+                        <img src="/images/giay5.avif" class="card-img-top" alt="Adidas Ultraboost">
+                        <div class="card-body">
+                            <h5 class="card-title">Nike Air Zoom Spiridon Cage 2</h5>
+                            <p class="card-text">4,799,000₫</p>
+                            <div class="d-flex justify-content-center gap-2">
+                                <button class="btn btn-success">Buy Now</button>
+                                <button class="btn btn-outline-primary">Add to Cart</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card">
+                    <a href="ctsp63.html">
+                        <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/2e1e0290-a2be-448d-9193-61ffe27e7185/JORDAN+HEIR+SERIES+PF.png"
+                            class="card-img-top" alt="Puma Future Rider">
+                        <div class="card-body">
+                            <h5 class="card-title">Jordan Heir Series PF Bloodline'</h5>
+                            <p class="card-text">3,239,000₫</p>
+                            <div class="d-flex justify-content-center gap-2">
+                                <button class="btn btn-success">Buy Now</button>
+                                <button class="btn btn-outline-primary">Add to Cart</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card">
+                    <a href="ctsp64.html">
+                        <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/2438e5ee-bf39-406b-9415-425ccaafc515/W+AIR+ZOOM+ALPHAFLY+NEXT%25+3.png"
+                            class="card-img-top" alt="Converse Chuck Taylor">
+                        <div class="card-body">
+                            <h5 class="card-title">Nike Alphafly 3</h5>
+                            <p class="card-text">8,059,000₫</p>
+                            <div class="d-flex justify-content-center gap-2">
+                                <button class="btn btn-success">Buy Now</button>
+                                <button class="btn btn-outline-primary">Add to Cart</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mb-5">
+        <div class="row">
+            <div class="col-lg-3 col-6">
+                <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://th.bing.com/th/id/OIP.m_g3Qi6B2haG7YUKYuDx_AHaNK?pid=ImgDet&w=187&h=333&c=7&dpr=1.5"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src=" https://i.pinimg.com/originals/0a/eb/d5/0aebd541d3bcb73202b1ee46e04c340c.jpg"
+                                class="d-block w-100" alt="...">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6">
+                <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel2" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carousel2" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://i.pinimg.com/originals/6c/c5/bc/6cc5bc5be69443b3076a98d320f6c087.png"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/32750663791477.5abc476ba7e01.png"
+                                class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6">
+                <div id="carousel3" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel3" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carousel3" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://th.bing.com/th/id/OIP.vEwvInpyi-6ambC_tXOftgHaKe?pid=ImgDet&w=178&h=251&c=7&dpr=1.5"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://th.bing.com/th/id/OIP.vcl2ONMZRFMblz8Z5VmWvQHaLF?pid=ImgDet&w=178&h=267&c=7&dpr=1.5"
+                                class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-6">
+                <div id="carousel4" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel4" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carousel4" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://th.bing.com/th/id/OIP.BQdjMddRVHW76L8Z92xCNgAAAA?pid=ImgDet&w=188&h=333&c=7&dpr=1.5"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://th.bing.com/th/id/OIP.wScV-X7ADm3GBGygtARleAAAAA?pid=ImgDet&w=167&h=236&c=7&dpr=1.5"
+                                class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4 mb-5">
+        <h2 class="text-center d2">Featured Products</h2>
+        <div class="row g-4 mt-3">
+            <div class="col-6 col-md-3">
+                <div class="card">
+                    <img src="/images/giay8.avif" class="card-img-top" alt="Nike Air Max">
+                    <div class="card-body">
+                        <h5 class="card-title">Air Jordan Legacy 312 Low</h5>
+                        <p class="card-text">4,259,000₫</p>
+                        <div class="d-flex justify-content-center gap-2">
+                            <button class="btn btn-success">Buy Now</button>
+                            <button class="btn btn-outline-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card">
+                    <img src="/images/giay9.avif" class="card-img-top" alt="Adidas Ultraboost">
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Air Zoom Spiridon Cage 2</h5>
+                        <p class="card-text">4,799,000₫</p>
+                        <div class="d-flex justify-content-center gap-2">
+                            <button class="btn btn-success">Buy Now</button>
+                            <button class="btn btn-outline-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card">
+                    <img src="/images/giay10.avif" class="card-img-top" alt="Puma Future Rider">
+                    <div class="card-body">
+                        <h5 class="card-title">Puma Future Rider</h5>
+                        <p class="card-text">2,999,000₫</p>
+                        <div class="d-flex justify-content-center gap-2">
+                            <button class="btn btn-success">Buy Now</button>
+                            <button class="btn btn-outline-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card">
+                    <img src="/images/giay11.avif" class="card-img-top" alt="Converse Chuck Taylor">
+                    <div class="card-body">
+                        <h5 class="card-title">Converse Chuck Taylor</h5>
+                        <p class="card-text">1,590,000₫</p>
+                        <div class="d-flex justify-content-center gap-2">
+                            <button class="btn btn-success">Buy Now</button>
+                            <button class="btn btn-outline-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mb-5">
+        <div class="row p-4">
+            <div class="col-lg-3 col-6">
+                <div id="carousel5" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel5" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carousel5" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/images/nike1.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/images/nike2.png" class="d-block w-100" alt="...">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6">
+                <div id="carousel6" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel6" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carousel6" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/images/nike4.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/images/nike3.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6">
+                <div id="carousel7" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel7" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carousel7" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/images/nike5.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/images/nike6.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6">
+                <div id="carousel8" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel8" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carousel8" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/images/nike8.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/images/nike9.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer class="bg-light pt-5 pb-4 mt-5 border-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-3">
+                    <h5 class="fw-bold">ABOUT Shoes Store</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="Introduction.html">Our Story</a></li>
+                        <li><a href="#">Activities</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 mb-3">
+                    <h5 class="fw-bold">INFORMATION</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Order Status</a></li>
+                        <li><a href="#">Shipping Methods</a></li>
+                        <li><a href="#">Payment Methods</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Size Exchange Policy</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Warranty Policy</a></li>
+                        <li><a href="#">Loyalty Program</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 mb-3">
+                    <h5 class="fw-bold">SUPPORT</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Store Locator</a></li>
+                        <li><a href="#">Business Partnership</a></li>
+                        <li><a href="#">Q&A</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 mb-3">
+                    <p class="fw-bold mt-0 mb-1">NHAN LUONG CONSUMER GOODS CO., LTD</p>
+                    <p><strong>Address:</strong> H92, Street 55, 586 Residential Area, Phu Thu Ward, Cai
+                        Rang District, Can Tho City</p>
+                    <p><strong>Phone:</strong> 0817511817</p>
+                    <p><strong>Email:</strong> lnhan4499@gmail.com</p>
+                    <p><strong>Hotline:</strong> 0931020201</p>
+                    <p><strong>Consultation Hours:</strong> 8:00 – 21:30 daily (except holidays)</p>
+                </div>
+            </div>
+
+            <div class="mt-4 pt-3 border-top d1">
+                <div>
+                    <a href="#" class="me-3">Terms & Conditions</a>
+                    <a href="#" class="me-3">Privacy Policy</a>
+                    <a href="#">User Guide</a>
+                    <p class="mb-1">Copyright © 2025 Shoes Store. Powered by Haravan Enterprise</p>
+                </div>
+            </div>
+
+            <div class="mt-1 text-center">
+                <p class="small text-muted">Business Registration Certificate No: 0931020201 issued on Jan
+                    20, 2024, last amended on May 27, 2025 by Department of Planning and Investment of Can
+                    Tho City</p>
+            </div>
+        </div>
+    </footer>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
