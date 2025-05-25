@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hiển thị tất cả sản phẩm</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        
+        .carousel-inner {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .carousel-item {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 40px 0;
+        }
+        
+        .product-card {
+            width: 260px;
+            padding: 20px;
+            border-radius: 15px;
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        
+        .product-name {
+            font-weight: bold;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        
+        .button-group {
+            margin-top: 10px;
+        }
+        
+        .btn-sm {
+            margin: 3px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="product-card">
+                        <img src="images/h1.jpg" alt="Sản phẩm 1">
+                        <div class="product-name">Candice ✔</div>
+                        <div class="button-group">
+                            <button class="btn btn-light btn-sm">abc</button>
+                            <button class="btn btn-light btn-sm">xyz</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/h2.jpg" alt="Sản phẩm 2">
+                        <div class="product-name">Candice ✔</div>
+                        <div class="button-group">
+                            <button class="btn btn-light btn-sm">ksjgdhd</button>
+                            <button class="btn btn-light btn-sm">kskhdhd</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/h4.jpg" alt="Sản phẩm 3">
+                        <div class="product-name">Candice ✔</div>
+                        <div class="button-group">
+                            <button class="btn btn-light btn-sm">mnp</button>
+                            <button class="btn btn-light btn-sm">qrs</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2: Nếu bạn có thêm sản phẩm, thêm vào đây -->
+                <!--
+                <div class="carousel-item">
+                    <div class="product-card">...</div>
+                    <div class="product-card">...</div>
+                    <div class="product-card">...</div>
+                </div>
+                -->
+
+            </div>
+
+            <!-- Điều hướng -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

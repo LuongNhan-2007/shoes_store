@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="icon" href="/images/11zon_cropped.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css">
+    <style>
+        .cart-section {
+            padding: 50px 0;
+        }
+
+        .cart-item-image {
+            width: 100px;
+            height: 120px;
+            object-fit: cover;
+        }
+
+        .ss {
+            font-size: 1.75rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .ss:hover {
+            text-shadow: white 0px 0px 5px;
+            font-size: 1.95rem;
+            transition: all 0.1s ease-in-out;
+        }
+
+        .mn:hover {
+            text-shadow: white 0px 5px 5px;
+            font-size: 1.2rem;
+            transition: all 0.1s ease-in-out;
+        }
+
+        .mn1 {
+            background-color: rgb(253, 251, 251);
+            border-radius: 0.5rem;
+        }
+
+        .mn2 {
+            color: rgb(69, 67, 67);
+        }
+
+        .mn2:hover {
+            color: black !important;
+            font-size: 1.2rem;
+            text-shadow: white 0px 5px 5px;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .text-danger {
+            font-size: 1.5rem;
+        }
+
+        .i1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand ss" href="index.html">Shoes Store</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mn"><a class="nav-link" href="index1.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle mn" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu mn1">
+                            <li><a class="dropdown-item text-muted mn2" href="MenShoes.html">Men</a></li>
+                            <li><a class="dropdown-item text-muted mn2" href="WomenShoes.html">Women</a></li>
+                            <li><a class="dropdown-item text-muted mn2" href="ChildrenShoes.html">Kids</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle mn" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Promotions
+                        </a>
+                        <ul class="dropdown-menu mn1">
+                            <li><a class="dropdown-item mn2" href="FlashSale.html">Flash Sale</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mn"><a class="nav-link" href="Login.html">Registration</a></li>
+                    <li class="nav-item mn"><a class="nav-link" href="Contact.html">Contact</a></li>
+                </ul>
+                <form class="d-flex ms-3 position-relative me-1 mt-3 mb-3" role="search">
+                    <input class="form-control me-2 bg-white text-dark fw-semibold border-dark search-box" type="search"
+                        id="search-input" placeholder="Search..." aria-label="Search" autocomplete="off">
+                    <button class="btn btn-outline-light" type="submit"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                    <div id="suggestions" class="list-group position-absolute mt-5 w-100 shadow" style="z-index: 1000;">
+                    </div>
+                    <a href="Cart.html" class="btn btn-outline-light position-relative ms-2">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="cart-count"
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            0
+                        </span>
+                    </a>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <section class="cart-section container">
+        <div class="container">
+            <h2 class="mb-4">🛒 My cart</h2>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col-md-2">
+                                    <img src="/images/giay4.avif" class="cart-item-image rounded-3 d-block"
+                                        alt="Product">
+                                </div>
+                                <div class="col-md-5">
+                                    <h5 class="mb-1">Nike Air Max Dn8</h5>
+                                    <p class="text-muted mb-0">Size: M</p>
+                                    <p class="text-muted mb-0">Color: white</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="input-group">
+                                        <button class="btn btn-outline-secondary quantity-minus">-</button>
+                                        <input type="number" class="form-control quantity-input i1" value="1" min="1">
+                                        <button class="btn btn-outline-secondary quantity-plus">+</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 text-end">
+                                    <span class="fw-bold text-nowrap">5.589.000đ</span>
+                                    <button class="btn btn-link text-danger">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">Summary</h5>
+
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Subtotal:</span>
+                                <span>5.589.000đ</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <span>Estimated Delivery & Handling:</span>
+                                <span>250.000đ</span>
+                            </div>
+
+                            <hr>
+
+                            <div class="d-flex justify-content-between fw-bold mb-4">
+                                <span>Total:</span>
+                                <span class="text-danger">5.839.000đ</span>
+                            </div>
+
+                            <a href="Payment.html" class="btn btn-dark text-light rounded-5 w-100 mb-2">Guest
+                                checkout</a>
+                            <a href="index1.html" class="btn btn-outline-secondary rounded-5 w-100">Continue
+                                shopping</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+input[type="number"] {
+  width: 60px;
+}
+
+body {
+  background-color: #f8f9fa;
+  padding-top: 70px;
+}
+.search-box::placeholder {
+  color: #4d5358;
+  font-weight: 600;
+  opacity: 1;
+}
+
+.ss {
+  font-size: 1.75rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+.ss:hover {
+  text-shadow: white 0px 0px 5px;
+  font-size: 1.95rem;
+  transition: all 0.1s ease-in-out;
+}
+.mn:hover {
+  text-shadow: white 0px 5px 5px;
+  font-size: 1.2rem;
+  transition: all 0.1s ease-in-out;
+}
+
+.mn1 {
+  background-color: rgb(253, 251, 251);
+  border-radius: 0.5rem;
+}
+
+.mn2 {
+  color: rgb(69, 67, 67);
+}
+
+.mn2:hover {
+  color: black !important;
+  font-size: 1.2rem;
+  text-shadow: white 0px 5px 5px;
+  transition: all 0.2s ease-in-out;
+}

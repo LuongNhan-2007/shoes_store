@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng Giá Vàng & Tin Tức</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e8f0fa;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .box {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 16px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .box h2 {
+            color: #0066a2;
+            border-bottom: 2px solid #0066a2;
+            padding-bottom: 8px;
+        }
+        
+        .news-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border-bottom: 1px solid #eee;
+            padding: 10px 0;
+        }
+        
+        .news-item img {
+            width: 150px;
+            height: 80px;
+            object-fit: cover;
+        }
+        
+        .gold-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .gold-table th,
+        .gold-table td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: center;
+        }
+        
+        .gold-table th {
+            background-color: #004b87;
+            color: #f2f84c;
+        }
+        
+        .gold-table td {
+            color: green;
+            font-weight: bold;
+        }
+        
+        .footer-note {
+            margin-top: 8px;
+            font-size: 12px;
+            display: flex;
+            justify-content: right;
+            gap: 4px;
+        }
+        
+        #db {
+            height: 200px;
+            width: 200px;
+        }
+        
+        .box p {
+            font-size: 12px;
+            color: #0066a2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Bài viết - Tin tức -->
+        <div class="box">
+            <h2>BÀI VIẾT - TIN TỨC - Lương Quang Nhân - HTTT - K49 </h2>
+            <p align="right">
+                <u>Xem tất cả ></u>
+            </p>
+            <div class="news-item">
+                <img id="db" src="/images/thongbao1.jpg" alt="" height="200px" width="200px">
+                <span>THÔNG BÁO VỀ VIỆC CHI CỔ TỨC NĂM 2023</span>
+            </div>
+            <div class="news-item">
+                <img src="/images/thongbao2.jpg" alt="">
+                <span>THÔNG BÁO CHI CỔ TỨC NĂM 2021</span>
+            </div>
+            <div class="news-item">
+                <img src="/images/thongbao3.jpg" alt="">
+                <span>NGHỊ QUYẾT ĐHĐCĐ NĂM 2022</span>
+            </div>
+            <div class="news-item">
+                <img src="/images/thongbao4.jpg" alt="">
+                <span>THÔNG BÁO V/V NGHỈ TẾT NGUYÊN ĐÁN</span>
+            </div>
+        </div>
+
+        <!-- Bảng giá vàng -->
+        <div class="box">
+            <h2>BẢNG GIÁ VÀNG</h2>
+            <p align="right"><small>Cập nhật ngày 24-04-2025 08:40:47</small></p>
+            <table class="gold-table">
+                <thead>
+                    <tr>
+                        <th>LOẠI VÀNG</th>
+                        <th>MUA VÀO</th>
+                        <th>BÁN RA</th>
+                        <th>CHÊNH LỆCH</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nhẫn SJCCT 99.99%</td>
+                        <td>113.500</td>
+                        <td>116.500</td>
+                        <td>500</td>
+                    </tr>
+                    <tr>
+                        <td>Nữ trang 99.99%</td>
+                        <td>112.200</td>
+                        <td>116.200</td>
+                        <td>500</td>
+                    </tr>
+                    <tr>
+                        <td>Nữ trang 99%</td>
+                        <td>110.340</td>
+                        <td>115.340</td>
+                        <td>500</td>
+                    </tr>
+                    <tr>
+                        <td>Nữ trang 98%</td>
+                        <td>109.180</td>
+                        <td>114.180</td>
+                        <td>490</td>
+                    </tr>
+                    <tr>
+                        <td>Nữ trang 75%</td>
+                        <td>81.450</td>
+                        <td>87.450</td>
+                        <td>370</td>
+                    </tr>
+                    <tr>
+                        <td>Nữ trang 68%</td>
+                        <td>73.320</td>
+                        <td>79.320</td>
+                        <td>340</td>
+                    </tr>
+                    <tr>
+                        <td>Nữ trang 58.3%</td>
+                        <td>62.040</td>
+                        <td>68.040</td>
+                        <td>290</td>
+                    </tr>
+                    <tr>
+                        <td>Nữ trang 41.7%</td>
+                        <td>42.760</td>
+                        <td>48.760</td>
+                        <td>210</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="footer-note">
+                <span>📄</span>
+                <span>Đơn vị: nghìn đồng/lượng</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

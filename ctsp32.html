@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chi Tiết Sản Phẩm</title>
+    <link rel="icon" href="/images/11zon_cropped.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css">
+    <style>
+        /* Custom styles */
+        .btn-circle {
+            width: 2.5rem;
+            height: 2.5rem;
+            padding: 0;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.9);
+            border: none;
+        }
+
+        .size-grid .btn {
+            width: 6rem;
+            margin: .25rem;
+        }
+
+        .btn-fav {
+            width: 100%;
+            border: 2px solid #333;
+            background: transparent;
+            color: #333;
+            border-radius: 2rem;
+        }
+
+        .btn-fav i {
+            margin-left: .5rem;
+        }
+
+        /* Giới hạn kích thước ảnh carousel */
+        #productCarousel .carousel-item img {
+            max-width: 600px;
+            max-height: 700px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container my-5">
+        <div class="row gx-5">
+            <!-- Left: Carousel with custom nav -->
+            <div class="col-md-6">
+                <!-- Carousel -->
+                <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner  rounded-5">
+                        <div class="carousel-item active text-center">
+                            <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/724bfb22-2757-4fb8-9c28-2d0a8b863068/FLEX+RUNNER+3+%28PS%29.png"
+                                class="d-block w-100" alt="Jordan DAY1 EO">
+                        </div>
+                        <div class="carousel-item text-center">
+                            <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c76ef697-982f-4c32-a2e7-f780796a6424/FLEX+RUNNER+3+%28PS%29.png"
+                                class="d-block w-100" alt="Alternate View 1">
+                        </div>
+                        <div class="carousel-item text-center">
+                            <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/032eb48a-2d5e-4950-af41-b51dddc16a75/FLEX+RUNNER+3+%28PS%29.png"
+                                class="d-block w-100" alt="Alternate View 2">
+                        </div>
+                        <div class="carousel-item text-center">
+                            <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b797ce21-bfe2-405c-b404-bbba8c2b6952/FLEX+RUNNER+3+%28PS%29.png"
+                                class="d-block w-100" alt="Alternate View 3">
+                        </div>
+                    </div>
+
+                    <!-- Custom Prev/Next buttons -->
+                    <div class="position-absolute" style="bottom:1rem; right:1rem; z-index:10;">
+                        <button type="button" class="btn-circle me-2" data-bs-target="#productCarousel"
+                            data-bs-slide="prev">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button type="button" class="btn-circle" data-bs-target="#productCarousel" data-bs-slide="next">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Details -->
+            <div class="col-md-6 d-flex flex-column justify-content-center mb-5">
+                <h2 class="fw-bold">Nike Flex Runner 3</h2>
+                <p class="text-muted mb-2">Younger Kids' Shoes</p>
+                <h4 class="text-danger mb-4">1,149,000₫</h4>
+
+                <!-- Size Selection -->
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="fw-semibold">Select Size</span>
+                    <a href="#" class="text-decoration-none"><i class="fas fa-ruler-horizontal"></i> Size Guide</a>
+                </div>
+                <div class="size-grid d-flex flex-wrap mb-4">
+                    <button class="btn btn-outline-secondary">EU 38.5</button>
+                    <button class="btn btn-outline-secondary">EU 39</button>
+                    <button class="btn btn-outline-secondary">EU 40</button>
+                    <button class="btn btn-outline-secondary">EU 40.5</button>
+                    <button class="btn btn-outline-secondary">EU 41</button>
+                    <button class="btn btn-outline-secondary">EU 42</button>
+                    <button class="btn btn-outline-secondary">EU 42.5</button>
+                    <button class="btn btn-outline-secondary">EU 43</button>
+                    <button class="btn btn-outline-secondary">EU 44</button>
+                    <button class="btn btn-outline-secondary">EU 44.5</button>
+                    <button class="btn btn-outline-secondary">EU 45</button>
+                    <button class="btn btn-outline-secondary">EU 45.5</button>
+                    <button class="btn btn-outline-secondary">EU 46</button>
+                    <button class="btn btn-outline-secondary">EU 47.5</button>
+                </div>
+
+                <!-- Add to Cart -->
+                <a href="Cart.html" class="btn btn-dark btn-lg w-100 mb-3" style="border-radius: 2rem;">
+                    Add to Cart
+                </a>
+
+                <!-- Favourite -->
+                <button class="btn btn-fav py-2 mb-5">
+                    Favourite <i class="far fa-heart"></i>
+                </button>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

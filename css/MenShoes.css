@@ -1,0 +1,135 @@
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+.carousel-item img {
+  height: 400px;
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+.hero-section {
+  background: url("https://static.nike.com/a/images/w_960,c_limit/3f78a2ff-773e-430d-b312-c317e7607fa6/image.jpg")
+    no-repeat center center;
+  background-size: cover;
+  display: flex;
+  height: 335px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.hero-section:hover {
+  box-shadow: #6c757d 0px 0px 30px;
+  height: 345px;
+  transition: all 0.3s ease;
+}
+
+.card-body {
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.card-text {
+  color: red;
+  font-weight: bold;
+  text-align: left;
+}
+
+.d2 {
+  margin-top: 20px;
+}
+
+.d2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+footer a {
+  text-decoration: none;
+  color: #6c757d;
+}
+
+footer a:hover {
+  color: #047ffa;
+  text-decoration: none;
+}
+
+.d1 {
+  text-align: center;
+}
+
+.mt-3 {
+  text-align: center;
+}
+
+.card-title {
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.card {
+  border: none;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 30px black;
+  border: #6c757d;
+  transition: all 0.2s ease;
+}
+
+.card-body {
+  background-color: #ffffff;
+}
+
+body {
+  padding-top: 70px;
+}
+
+.search-box::placeholder {
+  color: #212529;
+  font-weight: 600;
+  opacity: 1;
+}
+
+.ss {
+  font-size: 1.75rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+.ss:hover {
+  text-shadow: white 0px 0px 5px;
+  font-size: 1.9rem;
+  transition: all 0.1s ease-in-out;
+}
+.mn:hover {
+  text-shadow: white 0px 5px 5px;
+  font-size: 1.2rem;
+  transition: all 0.1s ease-in-out;
+}
+
+.mn1-menu {
+  background-color: rgb(253, 251, 251);
+  border-radius: 0.5rem;
+}
+
+.mn2 {
+  color: rgb(69, 67, 67);
+}
+
+.mn2:hover {
+  color: black !important;
+  font-size: 1.2rem;
+  text-shadow: white 0px 5px 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}

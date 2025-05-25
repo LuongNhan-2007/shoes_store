@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chi Tiết Sản Phẩm</title>
+    <link rel="icon" href="/images/11zon_cropped.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css">
+    <style>
+        /* Custom styles */
+        .btn-circle {
+            width: 2.5rem;
+            height: 2.5rem;
+            padding: 0;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.9);
+            border: none;
+        }
+
+        .size-grid .btn {
+            width: 6rem;
+            margin: .25rem;
+        }
+
+        .btn-fav {
+            width: 100%;
+            border: 2px solid #333;
+            background: transparent;
+            color: #333;
+            border-radius: 2rem;
+        }
+
+        .btn-fav i {
+            margin-left: .5rem;
+        }
+
+        /* Giới hạn kích thước ảnh carousel */
+        #productCarousel .carousel-item img {
+            max-width: 600px;
+            max-height: 700px;
+        }
+
+
+        .ss {
+            font-size: 1.75rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .ss:hover {
+            text-shadow: white 0px 0px 5px;
+            font-size: 1.95rem;
+            transition: all 0.1s ease-in-out;
+        }
+
+        .mn:hover {
+            text-shadow: white 0px 5px 5px;
+            font-size: 1.2rem;
+            transition: all 0.1s ease-in-out;
+        }
+
+        .mn1 {
+            background-color: rgb(253, 251, 251);
+            border-radius: 0.5rem;
+        }
+
+        .mn2 {
+            color: rgb(69, 67, 67);
+        }
+
+        .mn2:hover {
+            color: black !important;
+            font-size: 1.2rem;
+            text-shadow: white 0px 5px 5px;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .text-danger {
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand ss" href="index1.html">Shoes Store</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mn"><a class="nav-link" href="index1.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle mn" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu mn1">
+                            <li><a class="dropdown-item text-muted mn2" href="MenShoes.html">Men</a></li>
+                            <li><a class="dropdown-item text-muted mn2" href="WomenShoes.html">Women</a></li>
+                            <li><a class="dropdown-item text-muted mn2" href="ChildrenShoes.html">Kids</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle mn" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Promotions
+                        </a>
+                        <ul class="dropdown-menu mn1">
+                            <li><a class="dropdown-item mn2" href="FlashSale.html">Flash Sale</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mn"><a class="nav-link" href="Login.html">Registration</a></li>
+                    <li class="nav-item mn"><a class="nav-link" href="Contact.html">Contact</a></li>
+                </ul>
+                <form class="d-flex ms-3 position-relative me-1 mt-3 mb-3" role="search">
+                    <input class="form-control me-2 bg-white text-dark fw-semibold border-dark search-box" type="search"
+                        id="search-input" placeholder="Search..." aria-label="Search" autocomplete="off">
+                    <button class="btn btn-outline-light" type="submit"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                    <div id="suggestions" class="list-group position-absolute mt-5 w-100 shadow" style="z-index: 1000;">
+                    </div>
+                    <a href="Cart.html" class="btn btn-outline-light position-relative ms-2">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="cart-count"
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            0
+                        </span>
+                    </a>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="row gx-5">
+            <!-- Left: Carousel with custom nav -->
+            <div class="col-md-6">
+                <!-- Carousel -->
+                <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner  rounded-5">
+                        <div class="carousel-item active text-center">
+                            <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d0a23b7b-d482-4e41-85d5-b632d2a9a2f6/W+NIKE+DUNK+LOW+NEXT+NATURE.png"
+                                class="d-block w-100" alt="Jordan DAY1 EO">
+                        </div>
+                        <div class="carousel-item text-center">
+                            <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/463911f1-5754-4e46-a64c-3b1598bd64f7/W+NIKE+DUNK+LOW+NEXT+NATURE.png"
+                                class="d-block w-100" alt="Alternate View 1">
+                        </div>
+                        <div class="carousel-item text-center">
+                            <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/1caa8229-14ad-4de3-82a2-db7e6c245dc8/W+NIKE+DUNK+LOW+NEXT+NATURE.png"
+                                class="d-block w-100" alt="Alternate View 2">
+                        </div>
+                        <div class="carousel-item text-center">
+                            <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/01f4a4b9-b569-4289-8eda-5bd351d90032/W+NIKE+DUNK+LOW+NEXT+NATURE.png"
+                                class="d-block w-100" alt="Alternate View 3">
+                        </div>
+                    </div>
+
+                    <!-- Custom Prev/Next buttons -->
+                    <div class="position-absolute" style="bottom:1rem; right:1rem; z-index:10;">
+                        <button type="button" class="btn-circle me-2" data-bs-target="#productCarousel"
+                            data-bs-slide="prev">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button type="button" class="btn-circle" data-bs-target="#productCarousel" data-bs-slide="next">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Details -->
+            <div class="col-md-6 d-flex flex-column justify-content-center mb-5">
+                <h2 class="fw-bold">Nike Dunk Low Next Nature</h2>
+                <p class="text-muted mb-2"> Women's Shoes</p>
+                <p class="card-text">
+                    <span class="price">
+                        <strong class="fw-bold me-1 text-danger">
+                            2,343,199₫
+                        </strong>
+                        <s class="text-secondary me-1">2,929,000₫</s>
+                        <strong class="me-1 text-success">
+                            20% off
+                        </strong>
+                    </span>
+                </p>
+                <!-- Size Selection -->
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="fw-semibold">Select Size</span>
+                    <a href="#" class="text-decoration-none"><i class="fas fa-ruler-horizontal"></i> Size Guide</a>
+                </div>
+                <div class="size-grid d-flex flex-wrap mb-4">
+                    <button class="btn btn-outline-secondary">EU 38.5</button>
+                    <button class="btn btn-outline-secondary">EU 39</button>
+                    <button class="btn btn-outline-secondary">EU 40</button>
+                    <button class="btn btn-outline-secondary">EU 40.5</button>
+                    <button class="btn btn-outline-secondary">EU 41</button>
+                    <button class="btn btn-outline-secondary">EU 42</button>
+                    <button class="btn btn-outline-secondary">EU 42.5</button>
+                    <button class="btn btn-outline-secondary">EU 43</button>
+                    <button class="btn btn-outline-secondary">EU 44</button>
+                    <button class="btn btn-outline-secondary">EU 44.5</button>
+                    <button class="btn btn-outline-secondary">EU 45</button>
+                    <button class="btn btn-outline-secondary">EU 45.5</button>
+                    <button class="btn btn-outline-secondary">EU 46</button>
+                    <button class="btn btn-outline-secondary">EU 47.5</button>
+                </div>
+
+                <!-- Add to Cart -->
+                <a href="Cart.html" class="btn btn-dark btn-lg w-100 mb-3" style="border-radius: 2rem;">
+                    Add to Cart
+                </a>
+
+                <!-- Favourite -->
+                <button class="btn btn-fav py-2 mb-5">
+                    Favourite <i class="far fa-heart"></i>
+                </button>
+                <p>You can always count on a classic. The Dunk Low pairs its iconic colour-blocking with premium
+                    materials and plush padding for game-changing comfort that lasts. The styling possibilities are
+                    endless—how will you wear your Dunks?</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+.carousel-item img {
+  height: 500px;
+  object-fit: cover;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  /* Nếu bạn muốn có hiệu ứng khi rê chuột, bỏ nếu không */
+}
+
+footer a {
+  text-decoration: none;
+  color: #66717a;
+  /* Màu xám nhẹ Bootstrap, bạn có thể đổi sang #888 hoặc #999 nếu muốn nhạt hơn */
+}
+
+footer a:hover {
+  color: #047ffa;
+  /* Màu đậm hơn khi hover, có thể điều chỉnh */
+  text-decoration: none;
+  /* Có thể bỏ nếu không muốn gạch chân khi hover */
+}
+
+.mt-3 {
+  text-align: center;
+}
+
+.d1 {
+  text-align: center;
+}
+
+h3 {
+  font-style: italic;
+}
+
+.dropdown-item:hover {
+  text-decoration: none;
+}
+
+.ss {
+  font-size: 1.75rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+.ss:hover {
+  text-shadow: white 0px 0px 5px;
+  font-size: 1.95rem;
+  transition: all 0.1s ease-in-out;
+}
+
+.mn:hover {
+  text-shadow: white 0px 5px 5px;
+  font-size: 1.2rem;
+  transition: all 0.1s ease-in-out;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: red;
+  text-align: left;
+}
+
+.card {
+  border: none;
+  /* nếu bạn đã tắt viền */
+  background-color: #f2f2f2;
+  border-radius: 10px;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 30px black;
+  /* Thêm hiệu ứng đổ bóng khi hover */
+  border: #6c757d;
+  transition: all 0.2s ease;
+}
+/* Màu nền trắng cho phần body để nổi bật */
+.card-body {
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.card-title {
+  font-size: 0.95rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+body {
+  padding-top: 70px;
+  /* hoặc điều chỉnh tuỳ chiều cao navbar của bạn */
+}
+.search-box::placeholder {
+  color: #434a52;
+  /* Màu chữ đậm hơn (gần với text-dark) */
+  font-weight: 600;
+  /* Đậm vừa (fw-semibold) */
+  opacity: 1;
+  /* Loại bỏ độ mờ mặc định */
+}
+.mn1 {
+  background-color: rgb(253, 251, 251);
+  border-radius: 0.5rem;
+}
+
+.mn2 {
+  color: rgb(69, 67, 67);
+}
+
+.mn2:hover {
+  color: black !important;
+  font-size: 1.2rem;
+  text-shadow: white 0px 5px 5px;
+  transition: all 0.2s ease-in-out;
+}
+.discount-badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: red;
+  color: white;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.hero-section {
+  background: url("https://static.nike.com/a/images/w_960,c_limit/5fc7aa41-dea7-43d1-bcbf-f8a3b1049e3d/image.jpg")
+    no-repeat center center;
+  background-size: cover;
+  display: flex;
+  height: 335px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.hero-section:hover {
+  box-shadow: #6c757d 0px 0px 30px;
+  height: 345px;
+  transition: all 0.3s ease;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}

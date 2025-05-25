@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Feedback</title>
+    <link rel="icon" href="/images/11zon_cropped.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome-free-6.7.2-web/fontawesome-free-6.7.2-web/css/all.min.css" />
+    <link rel="stylesheet" href="../css/Contact.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand ss" href="index1.html">Shoes Store</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mn"><a class="nav-link" href="index1.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle mn" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu mn1">
+                            <li><a class="dropdown-item text-muted mn2" href="MenShoes.html">Men</a></li>
+                            <li><a class="dropdown-item text-muted mn2" href="WomenShoes.html">Women</a></li>
+                            <li><a class="dropdown-item text-muted mn2" href="ChildrenShoes.html">Kids</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle mn" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Promotions
+                        </a>
+                        <ul class="dropdown-menu mn1">
+                            <li><a class="dropdown-item mn2" href="FlashSale.html">Flash Sale</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mn"><a class="nav-link" href="Login.html">Registration</a></li>
+                    <li class="nav-item mn"><a class="nav-link" href="Contact.html">Contact</a></li>
+                </ul>
+                <form class="d-flex ms-3 position-relative me-1 mt-3 mb-3" role="search">
+                    <input class="form-control me-2 bg-white text-dark fw-semibold border-dark search-box" type="search"
+                        id="search-input" placeholder="Search..." aria-label="Search" autocomplete="off">
+                    <button class="btn btn-outline-light" type="submit"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                    <div id="suggestions" class="list-group position-absolute mt-5 w-100 shadow" style="z-index: 1000;">
+                    </div>
+                    <a href="Cart.html" class="btn btn-outline-light position-relative ms-2">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="cart-count"
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            0
+                        </span>
+                    </a>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="feedback-form">
+            <h2 class="mb-4 text-center">Customer Feedback</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="fullname" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="fullname" placeholder="Enter full name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Enter phone number (optional)">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Feedback Content</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Enter your feedback here..."
+                        required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Submit Feedback</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="bg-light pt-5 pb-4 mt-5 border-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-3">
+                    <h5 class="fw-bold">ABOUT Shoes Store</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="Introduction.html">Our Story</a></li>
+                        <li><a href="#">Activities</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 mb-3">
+                    <h5 class="fw-bold">INFORMATION</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Order Status</a></li>
+                        <li><a href="#">Shipping Methods</a></li>
+                        <li><a href="#">Payment Methods</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Size Exchange Policy</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Warranty Policy</a></li>
+                        <li><a href="#">Loyalty Program</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 mb-3">
+                    <h5 class="fw-bold">SUPPORT</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Store Locator</a></li>
+                        <li><a href="#">Business Partnership</a></li>
+                        <li><a href="#">Q&A</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 mb-3">
+                    <p class="fw-bold mt-0 mb-1">NHAN LUONG CONSUMER GOODS CO., LTD</p>
+                    <p><strong>Address:</strong> H92, Street 55, 586 Residential Area, Phu Thu Ward, Cai
+                        Rang District, Can Tho City</p>
+                    <p><strong>Phone:</strong> 0817511817</p>
+                    <p><strong>Email:</strong> lnhan4499@gmail.com</p>
+                    <p><strong>Hotline:</strong> 0931020201</p>
+                    <p><strong>Consultation Hours:</strong> 8:00 – 21:30 daily (except holidays)</p>
+                </div>
+            </div>
+
+            <div class="mt-4 pt-3 border-top d1">
+                <div>
+                    <a href="#" class="me-3">Terms & Conditions</a>
+                    <a href="#" class="me-3">Privacy Policy</a>
+                    <a href="#">User Guide</a>
+                    <p class="mb-1">Copyright © 2025 Shoes Store. Powered by Haravan Enterprise</p>
+                </div>
+            </div>
+
+            <div class="mt-1 text-center">
+                <p class="small text-muted">Business Registration Certificate No: 0931020201 issued on Jan
+                    20, 2024, last amended on May 27, 2025 by Department of Planning and Investment of Can
+                    Tho City</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
