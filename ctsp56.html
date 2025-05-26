@@ -37,8 +37,6 @@
         .btn-fav i {
             margin-left: .5rem;
         }
-
-        /* Giới hạn kích thước ảnh carousel */
         #productCarousel .carousel-item img {
             max-width: 600px;
             max-height: 700px;
@@ -86,17 +84,15 @@
 </head>
 
 <body>
-
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand ss" href="index1.html">Shoes Store</a>
+            <a class="navbar-brand ss" href="index.html">Shoes Store</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mn"><a class="nav-link" href="index1.html">Home</a></li>
+                    <li class="nav-item mn"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle mn" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
@@ -142,9 +138,7 @@
 
     <div class="container my-5">
         <div class="row gx-5">
-            <!-- Left: Carousel with custom nav -->
             <div class="col-md-6">
-                <!-- Carousel -->
                 <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner  rounded-5">
                         <div class="carousel-item active text-center">
@@ -164,8 +158,6 @@
                                 class="d-block w-100" alt="Alternate View 3">
                         </div>
                     </div>
-
-                    <!-- Custom Prev/Next buttons -->
                     <div class="position-absolute" style="bottom:1rem; right:1rem; z-index:10;">
                         <button type="button" class="btn-circle me-2" data-bs-target="#productCarousel"
                             data-bs-slide="prev">
@@ -177,8 +169,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Right: Details -->
             <div class="col-md-6 d-flex flex-column justify-content-center mb-5">
                 <h2 class="fw-bold">Air Jordan 1 Mid SE</h2>
                 <p class="text-muted mb-2">Men's Shoes</p>
@@ -193,7 +183,6 @@
                         </strong>
                     </span>
                 </p>
-                <!-- Size Selection -->
                 <div class="d-flex justify-content-between align-items-center mb-2">
                     <span class="fw-semibold">Select Size</span>
                     <a href="#" class="text-decoration-none"><i class="fas fa-ruler-horizontal"></i> Size Guide</a>
@@ -214,13 +203,9 @@
                     <button class="btn btn-outline-secondary">EU 46</button>
                     <button class="btn btn-outline-secondary">EU 47.5</button>
                 </div>
-
-                <!-- Add to Cart -->
                 <a href="Cart.html" class="btn btn-dark btn-lg w-100 mb-3" style="border-radius: 2rem;">
                     Add to Cart
                 </a>
-
-                <!-- Favourite -->
                 <button class="btn btn-fav py-2 mb-5">
                     Favourite <i class="far fa-heart"></i>
                 </button>
